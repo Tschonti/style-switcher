@@ -1,17 +1,17 @@
 <script lang="ts">
-    import env from "../.env.json";
+    // import env from "../.env.json";
     import { initializeApp } from "firebase/app";
     import { docStore } from "sveltefire";
     import { getFirestore, setDoc } from "firebase/firestore";
 
     // Your web app's Firebase configuration
     const firebaseConfig = {
-        apiKey: env.api_key,
+        apiKey: process.env.VITE_API_KEY,
         authDomain: "style-switcher.firebaseapp.com",
         projectId: "style-switcher",
         storageBucket: "style-switcher.appspot.com",
         messagingSenderId: "682739298879",
-        appId: env.app_id,
+        appId: process.env.VITE_APP_ID,
     };
 
     // Initialize Firebase
