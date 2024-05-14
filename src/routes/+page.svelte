@@ -6,12 +6,12 @@
 
     // Your web app's Firebase configuration
     const firebaseConfig = {
-        apiKey: process.env.VITE_API_KEY,
+        apiKey: process.env.API_KEY,
         authDomain: "style-switcher.firebaseapp.com",
         projectId: "style-switcher",
         storageBucket: "style-switcher.appspot.com",
         messagingSenderId: "682739298879",
-        appId: process.env.VITE_APP_ID,
+        appId: process.env.APP_ID,
     };
 
     // Initialize Firebase
